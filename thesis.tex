@@ -1,7 +1,7 @@
-% main.tex
+
 \include{header}
 \begin{document}
-	
+
 	% Value below have to be filled in by author before starting the thesis
 	\selectlanguage{english} % Select "english" or "german"
 	\newcommand{\thesistitle}{Titel der Abschulssarbeit} % Enter Title of Thesis
@@ -9,37 +9,37 @@
 	\newcommand{\monthofsubmission}{Monat der Abgabe} % Enter month and year of submission
 	\newcommand{\nameoffirstsupervisor}{Name Erstgutachter} % Enter name of first supervisor
 	\newcommand{\nameofsecondsupervisor}{Name Zweitgutachter} % Enter name of second supervisor
-	
-	
+
+
 	% Titlepage and Table of Contents
 	\include{chapters/titlepage}
 	\blankpage
 	\pagenumbering{roman}
 	\tableofcontents
 	\cleardoublepage
-	
+
 	% Main Content
 	\pagenumbering{arabic}
 	\include{chapters/introduction}
 	\include{chapters/sample-chapter}
-	
+
 	% Appendix
 	\appendix
 	\include{chapters/appendix}
-	
+
 	\listoffigures
 	\addcontentsline{toc}{chapter}{\listfigurename}
 	\cleardoublepage
-	
+
 	\listofalgorithms
 	\addcontentsline{toc}{chapter}{\listalgorithmname}
 	\cleardoublepage
-	
+
 	% Bibliography
 	\bibliographystyle{plain}
 	\bibliography{bibliography/references}
 	\addcontentsline{toc}{chapter}{\bibname}
-	
+
 	% Erklaerung
 	\thispagestyle{myheadings}
 	\markboth{}{\affidavittitle}
@@ -47,4 +47,3 @@
 	\include{pretext/erklaerung}
 	\cleardoublepage
 \end{document}
-
