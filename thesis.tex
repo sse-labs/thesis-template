@@ -1,49 +1,55 @@
+% Configuration options:
+% english - Use for English language theses
+% german - Use for German language theses
+% ba - Use for Bachelor theses
+% ma - Use for Master theses
+\documentclass[english,ma]{tudo-sse-thesis}
 
-\include{header}
+% Add the packages necessary
+\usepackage[math]{blindtext}
+\usepackage{ebproof}
+\usepackage{tikz}
+\usetikzlibrary{tikzmark}
+
+% Provide your title
+\title{Thesis Title}
+
+% Provide your name
+\author{Firstname Lastname}
+
+% Provide examiner names. First examiner has a reasonable default and only needs to changed if the default does not fit.
+% \firstexaminer{JProf.\ Dr.-Ing.\ Ben Hermann} % Default value
+\secondexaminer{Prof.\ Dr.\ Zweiter Gutachter}
+
 \begin{document}
 
-	% Value below have to be filled in by author before starting the thesis
-	\selectlanguage{english} % Select "english" or "german"
-	\newcommand{\thesistitle}{Titel der Abschulssarbeit} % Enter Title of Thesis
-	\newcommand{\nameofauthor}{Name des Verfassers} % Enter author name
-	\newcommand{\monthofsubmission}{Monat der Abgabe} % Enter month and year of submission
-	\newcommand{\nameoffirstsupervisor}{Name Erstgutachter} % Enter name of first supervisor
-	\newcommand{\nameofsecondsupervisor}{Name Zweitgutachter} % Enter name of second supervisor
+\maketitle
+
+\pagenumbering{roman}
+
+% Only add for english documents
+\begin{abstract}
+  This is an Abstract. \blindtext
+\end{abstract}
+
+% This needs to be in German or English documents
+\begin{abstract-ger}
+  Dies ist eine Zusammenfassung. \blindtext
+\end{abstract-ger}
+
+\tableofcontents
+\cleardoublepage
+
+\pagenumbering{arabic}
+
+% Add your content here
+\input{chapters/introduction.tex}
+\input{chapters/sample-chapter.tex}
 
 
-	% Titlepage and Table of Contents
-	\include{chapters/titlepage}
-	\blankpage
-	\pagenumbering{roman}
-	\tableofcontents
-	\cleardoublepage
+% Bibliography
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{bibliography/references}
+\addcontentsline{toc}{chapter}{\bibname}
 
-	% Main Content
-	\pagenumbering{arabic}
-	\include{chapters/introduction}
-	\include{chapters/sample-chapter}
-
-	% Appendix
-	\appendix
-	\include{chapters/appendix}
-
-	\listoffigures
-	\addcontentsline{toc}{chapter}{\listfigurename}
-	\cleardoublepage
-
-	\listofalgorithms
-	\addcontentsline{toc}{chapter}{\listalgorithmname}
-	\cleardoublepage
-
-	% Bibliography
-	\bibliographystyle{plain}
-	\bibliography{bibliography/references}
-	\addcontentsline{toc}{chapter}{\bibname}
-
-	% Erklaerung
-	\thispagestyle{myheadings}
-	\markboth{}{\affidavittitle}
-	\addcontentsline{toc}{chapter}{\affidavittitle}
-	\include{pretext/erklaerung}
-	\cleardoublepage
 \end{document}
