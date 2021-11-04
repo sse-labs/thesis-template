@@ -16,10 +16,32 @@
 \RequirePackage{multicol}
 \RequirePackage[numbers]{natbib}
 \RequirePackage{xcolor}
+\RequirePackage[quiet]{fontspec}
 
+\defaultfontfeatures{Ligatures=TeX}
 % Font Configuration
-\RequirePackage{libertineRoman}
-\RequirePackage{nimbussans}
+%\RequirePackage{libertineRoman}
+%\RequirePackage{nimbussans}
+
+\setsansfont{NotoSans}[
+	  Ligatures={Common,Rare},
+		Path=./fonts/NotoSans/,
+		Scale=0.9,
+		Extension = .ttf,
+		UprightFont=*-Regular,
+		BoldFont=*-Bold,
+		ItalicFont=*-Italic,
+		BoldItalicFont=*-BoldItalic]
+
+\setmainfont{LinLibertine}%
+   [Ligatures={Common,Rare}, Numbers=OldStyle,
+	 Path=./fonts/LinLibertine/,
+	 Scale=0.9,
+	 Extension = .otf,
+	 UprightFont=*_R,
+	 BoldFont=*_RB,
+	 ItalicFont=*_RI,
+	 BoldItalicFont=*_RBI]
 
 \RequirePackage[scaled=1.05,proportional,lightcondensed]{zlmtt}
 \RequirePackage[varqu]{zi4}
