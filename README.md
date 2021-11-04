@@ -49,7 +49,7 @@ xelatex thesis.tex
 ```
 ### Usage with Overleaf
 
-Works out of the box... Just set the main file to thesis.tex in the settings.
+Works out of the box... Just set the main file to thesis.tex and the compiler to XeLaTeX in the settings.
 
 ## Things you don't need to take care of
 
