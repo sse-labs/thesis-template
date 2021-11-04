@@ -47,9 +47,17 @@ bibtex thesis
 xelatex thesis.tex
 xelatex thesis.tex
 ```
+### Usage with Overleaf
+
+For some unknown reason Overleaf does not work with our template in the 2021 TexLive setting. 
+Please set the TexLive version to 2020 and it works out of the box. 
+![Overleaf Settings](https://user-images.githubusercontent.com/1974799/140313182-0f8f6687-080d-4933-ae4f-f734423f4687.png)
+
 
 ## Things you don't need to take care of
 
 We use XeTeX and a modern package setup.
 Older LaTeX references sometimes advise you to use German Umlaut characters such as `ä` in the form of `a"`.
 This is not necessary anymore. XeTeX and the fonts are Unicode aware.
+
+
