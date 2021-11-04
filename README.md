@@ -49,10 +49,8 @@ xelatex thesis.tex
 ```
 ### Usage with Overleaf
 
-<figure style="float: right">
-<img  src="https://user-images.githubusercontent.com/1974799/140313182-0f8f6687-080d-4933-ae4f-f734423f4687.png">
-  <caption>Overleaf Settings for our template</caption>
-</figure>
+<img align="right" alt="Overleaf settings for our template" src="https://user-images.githubusercontent.com/1974799/140313182-0f8f6687-080d-4933-ae4f-f734423f4687.png">
+
 For some unknown reason Overleaf does not work with our template in the 2021 TexLive setting. 
 Please set the TexLive version to 2020 and it works out of the box. 
 
