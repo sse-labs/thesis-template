@@ -49,7 +49,7 @@ xelatex thesis.tex
 ```
 ### Usage with Overleaf
 
-<figure align="right">
+<figure style="float: right">
 <img  src="https://user-images.githubusercontent.com/1974799/140313182-0f8f6687-080d-4933-ae4f-f734423f4687.png">
   <caption>Overleaf Settings for our template</caption>
 </figure>
