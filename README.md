@@ -49,10 +49,7 @@ xelatex thesis.tex
 ```
 ### Usage with Overleaf
 
-<img align="right" alt="Overleaf settings for our template" src="https://user-images.githubusercontent.com/1974799/140313182-0f8f6687-080d-4933-ae4f-f734423f4687.png">
-
-For some unknown reason Overleaf does not work with our template in the 2021 TexLive setting. 
-Please set the TexLive version to 2020 and it works out of the box. 
+Works out of the box... Just set the main file to thesis.tex and the compiler to XeLaTeX in the settings.
 
 ## Things you don't need to take care of
 
