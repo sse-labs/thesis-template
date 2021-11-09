@@ -33,6 +33,13 @@
 		ItalicFont=*-Italic,
 		BoldItalicFont=*-BoldItalic]
 
+\setmonofont{Inconsolata}[
+				Path=./fonts/Inconsolata/,
+				Scale=0.9,
+				Extension = .ttf,
+				UprightFont=*-Regular,
+				BoldFont=*-Bold]
+
 \setmainfont{LinLibertine}%
    [Ligatures={Common,Rare}, Numbers=OldStyle,
 	 Path=./fonts/LinLibertine/,
@@ -43,8 +50,6 @@
 	 ItalicFont=*_RI,
 	 BoldItalicFont=*_RBI]
 
-\RequirePackage[scaled=1.05,proportional,lightcondensed]{zlmtt}
-\RequirePackage[varqu]{zi4}
 \RequirePackage[libertine]{newtxmath}
 
 \setkomafont{pagehead}{\sffamily}
