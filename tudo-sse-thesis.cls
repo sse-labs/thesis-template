@@ -17,6 +17,7 @@
 \RequirePackage[numbers]{natbib}
 \RequirePackage{xcolor}
 \RequirePackage[quiet]{fontspec}
+\RequirePackage{pdfpages}
 
 \defaultfontfeatures{Ligatures=TeX}
 % Font Configuration
